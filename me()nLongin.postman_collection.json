@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "ed2372d6-7c62-4d5c-bbaf-4174800fe619",
+		"name": "me()nLongin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create note",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYTk1NThiNGMxZjZkMDVkMGZmNzM2OSIsImlhdCI6MTYyMTcxMDIxOSwiZXhwIjoxNjIxNzEzODE5fQ.XxYrtWYpYrj-mcb5ZjJn87IwrzsGIh3gwDYISA08Bnk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":  \"my second note\",\r\n    \"description\": \"my second description\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get notes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYTk1NThiNGMxZjZkMDVkMGZmNzM2OSIsImlhdCI6MTYyMTcxMDIxOSwiZXhwIjoxNjIxNzEzODE5fQ.XxYrtWYpYrj-mcb5ZjJn87IwrzsGIh3gwDYISA08Bnk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get note",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYTk1NThiNGMxZjZkMDVkMGZmNzM2OSIsImlhdCI6MTYyMTcxNTE4NiwiZXhwIjoxNjIxNzE4Nzg2fQ.j-WC1kaaQpXPJ5X2PQuoAc4OlGca5XPoEjvD70mqYZY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/notes/60a95ab0f60a140bdc2c3c92",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"60a95ab0f60a140bdc2c3c92"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete note",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYTk1NThiNGMxZjZkMDVkMGZmNzM2OSIsImlhdCI6MTYyMTcxMDIxOSwiZXhwIjoxNjIxNzEzODE5fQ.XxYrtWYpYrj-mcb5ZjJn87IwrzsGIh3gwDYISA08Bnk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/notes/60a956e54c1f6d05d0ff736b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"60a956e54c1f6d05d0ff736b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update note",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYTk1NThiNGMxZjZkMDVkMGZmNzM2OSIsImlhdCI6MTYyMTcxMDIxOSwiZXhwIjoxNjIxNzEzODE5fQ.XxYrtWYpYrj-mcb5ZjJn87IwrzsGIh3gwDYISA08Bnk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"two one title\",\r\n    \"description\": \"second description\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/notes/60a956a74c1f6d05d0ff736a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"60a956a74c1f6d05d0ff736a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"name\",\r\n    \"password\": \"password\",\r\n    \"email\": \"email@email.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"name\",\r\n    \"password\": \"password\",\r\n    \"email\": \"email@email.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"name2\",\r\n    \"password\": \"password\",\r\n    \"email\": \"email2@email.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
